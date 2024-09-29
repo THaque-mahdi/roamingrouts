@@ -1,0 +1,958 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var(--font-family-2);
+
+}
+
+:root {
+    --main-color: #17c9e8ed;
+    --secound-color: #c5c4c4;
+    --text-color: #1c1b1b;
+    --navtext-color: #ffffff;
+    --text-alter-color: #16a2ee;
+    --poppinns-font: "poppins", sans-placeif;
+    --font-family-2: "plakyfair Display", placeif;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--navtext-color);
+    box-shadow: 0 0 3rem rgba(25, 25, 24, 0.3);
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.navbar a {
+    color: var(--text-color);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 0 .7rem;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--text-alter-color);
+    border-radius: 2rem;
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar .nav-book {
+    padding: .7rem 1.5rem;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 2rem;
+}
+
+.navbar .nav-book:hover {
+    background-color: var(--text-alter-color);
+    color: var(--navtext-color);
+    border: 1px solid var(--navtext-color);
+}
+
+.nav button {
+    display: none;
+}
+
+.home img {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.welcome-text {
+    padding: 115px 0;
+    text-align: center;
+    color: var(--navtext-color);
+    position: relative;
+    top: -450px;
+    background-color: rgba(0, 0, 0, 0.338);
+}
+
+
+.welcome-text h5 {
+    font-size: 30px;
+}
+
+.welcome-text h2 {
+    font-size: 80px;
+}
+
+.bookingform {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 15px;
+    background-color: var(--navtext-color);
+    padding: 30px;
+    width: 60%;
+    position: relative;
+    top: -500px;
+    left: 20%;
+    box-shadow: 0 0 3rem rgba(25, 25, 24, 0.3);
+}
+
+.bookingform .box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.bookingform .info {
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 7px;
+}
+
+.info-btn button {
+    font-size: 15px;
+    padding: .7rem 1.5rem;
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.info-btn button:hover {
+    background-color: var(--text-alter-color);
+    color: var(--navtext-color);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: .7rem;
+    width: 60%;
+    position: relative;
+    top: -420px;
+    left: 20%;
+}
+
+.card {
+    background: transparent;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+    padding-top: .7rem;
+    text-align: justify;
+}
+
+.icon {
+    background-color: #00bbff36;
+    color: var(--text-alter-color);
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.citys {
+    position: relative;
+    top: -400px;
+}
+
+.city-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.city-box img {
+    height: 250px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+.city-box .city_text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.city-box h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.city-box p {
+    padding: 7px 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.city_text .info p {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    padding-left: 30%;
+    font-size: 20px;
+
+}
+
+.city_text .info {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    padding-left: 30%;
+    font-size: 20px;
+}
+
+.city_text .info .fa-regular:hover {
+    cursor: pointer;
+}
+
+.info .fa-solid {
+    color: red;
+    cursor: pointer;
+}
+
+.city_text .more {
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.city_text .more p {
+    padding: .7rem 1rem;
+    width: 30%;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.city_text .more p:hover {
+    background-color: var(--text-alter-color);
+    color: var(--navtext-color);
+    cursor: pointer;
+    border: none;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.places {
+    position: relative;
+    top: -450px;
+}
+
+.place-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    padding-left: 10%;
+
+}
+
+.place img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.place h4 {
+    position: relative;
+    top: -55px;
+    text-align: center;
+    align-items: center;
+    color: var(--navtext-color);
+    background-color: rgba(0, 0, 0, 0.468);
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 15px 15px;
+    padding-top: 15px;
+}
+
+.place p {
+    position: relative;
+    top: -25px;
+    text-align: center;
+    align-items: center;
+    color: var(--navtext-color);
+    background-color: var(--text-alter-color);
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    padding-top: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.travel {
+    position: relative;
+    top: -470px;
+}
+
+.booking {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 10%;
+}
+
+.destination-info h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.destination-info p {
+    font-size: 17px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.destination a {
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+.destination a:hover {
+    color: var(--text-alter-color);
+    cursor: pointer;
+}
+
+.book-info {
+    margin: 15px 30px 15px 0;
+    padding: 7px 30px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--navtext-color);
+    background-color: var(--text-color);
+}
+
+.book-info:hover {
+    cursor: pointer;
+    color: var(--navtext-color);
+    background-color: var(--text-alter-color);
+}
+
+
+.travel .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.travel .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel .swiper-slide img {
+    height: 360px;
+    width: 400px;
+    border-radius: 0 20% 0 20%;
+}
+
+.travel .swiper-pagination {
+    position: relative;
+    direction: ltr;
+}
+
+.subscibe {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: -500px;
+}
+
+.subscibe h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.subscibe p {
+    text-align: center;
+    width: 380px;
+    margin: 20px 0;
+}
+
+.input {
+    text-align: center;
+}
+
+.input input {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 1.5rem 0 0 1.5rem;
+    box-shadow: .5rem 0 .5rem .5rem #4745451b;
+}
+
+.input input:hover {
+    background-color: var(--secound-color);
+}
+
+.input button {
+    padding: 10px 20px;
+    border-radius: 0 1.5rem 1.5rem 0;
+    background-color: var(--text-color);
+    color: var(--navtext-color);
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    transition: .3s linear;
+}
+
+.input button:hover {
+    background-color: var(--text-alter-color);
+    color: var(--navtext-color);
+}
+
+.input ul {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.input ul li {
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.input ul li h6 {
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 18px;
+    border-top: 2px solid var(--text-color);
+}
+
+footer {
+    padding: 10px;
+    border-top: 1px solid var(--text-alter-color);
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    position: relative;
+    top: -500px;
+}
+
+.footer a{
+    color: var(--text-alter-color);
+    font-weight: bold;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid var(--text-alter-color);
+    padding-bottom: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    .welcome-text{
+        padding: 130px 0 115px  0;
+        position: relative;
+        top: -500px;
+    }
+    .city-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+    }
+
+    .city_text .info {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        padding-left: 30%;
+    }
+
+    .city_text .more p {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .travel .swiper-slide img {
+        height: 80vh;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 25px;
+        color: var(--text-color);
+        cursor: pointer;
+        border: none;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 58px;
+        right: 5%;
+        height: fit-content;
+        width: 150px;
+        flex-direction: column;
+        gap: 0px;
+        display: none;
+    }
+
+    .navbar a {
+        width: 100%;
+        height: 50px;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+        background: var(--navtext-color);
+        box-shadow: -65px 95px 160px rgba(0, 0, 0, 0.6);
+        display: grid;
+        place-items: center;
+    }
+
+    .navbar a:hover {
+        background: var(--text-alter-color);
+        color: var(--navtext-color);
+        border-radius: 0%;
+        border: 0px;
+    }
+
+    .navbar .nav-book {
+        background-color: var(--main-color);
+        color: var(--text-color);
+        border: none;
+        border-radius: 0%;
+    }
+
+    .navbar .nav-book:hover {
+        background-color: var(--text-alter-color);
+        color: var(--navtext-color);
+    }
+
+    #open-menu-btn {
+        display: block;
+    }
+
+    @keyframes animateNavItems {
+        0% {
+            transform: rotateZ(0deg) rotateX(0) scale(0.1);
+        }
+
+        100% {
+            transform: rotateZ(90) rotateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .place-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .welcome-text{
+        padding: 150px 0 115px  0;
+        position: relative;
+        top: -520px;
+    }
+
+    .welcome-text h5 {
+        font-size: 20px;
+    }
+
+    .welcome-text h2 {
+        font-size: 70px;
+    }
+
+    .booking {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .book-info {
+        width: 70%;
+        text-decoration: none;
+        margin-left: 17%;
+    }
+
+    .input ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 40px;
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 675px) {
+    .bookingform {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .travel .swiper-slide img {
+        height: 80vh;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .bookingform {
+        width: 80%;
+        position: relative;
+        top: -500px;
+        left: 10%;
+    }
+
+    
+    .city-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .welcome-text h5 {
+        font-size: 15px;
+    }
+
+    .welcome-text h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .welcome-text p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .city_text .more p {
+        width: 50%;
+        position: relative;
+        left: -20px;
+    }
+
+    .travel .swiper-slide img {
+        height: 70vh;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .welcome-text h2 {
+        font-size: 50px;
+    }
+
+    .bookingform {
+        width: 90%;
+        position: relative;
+        top: -520px;
+        left: 5%;
+    }
+
+    .place-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px 40px;
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .input ul li h6 {
+        text-align: center;
+        width: 90%;
+        margin-left: 27%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .welcome-text h2 {
+        font-size: 40px;
+    }
+
+    .subscibe h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .subscibe p {
+        width: 90%;
+    }
+
+
+    .subscibe {
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+        position: relative;
+        top: -500px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .city_text .more p {
+        width: 60%;
+        position: relative;
+        left: -25px;
+    }
+
+    .booking {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 1%;
+    }
+
+    .travel .swiper-slide img {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .input input {
+        border-radius: 1.5rem;
+    }
+
+    .input button {
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .input ul li h6 {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .city_text {
+        width: 150%;
+        position: relative;
+        left: -80px;
+    }
+
+    .city-box h2 {
+        font-size: 20px;
+    }
+
+
+    .city_text .more {
+        position: relative;
+        left: -20px;
+    }
+
+    .city_text .more p {
+        padding: .5rem .7rem;
+    }
+
+}
+
+@media screen and (max-width: 337px) {
+    .input ul li h6 {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    nav button {
+        font-size: 20px;
+    }
+
+    .city_text .more {
+        position: relative;
+        left: -5px;
+    }
+
+    .book-info {
+        width: 90%;
+        text-decoration: none;
+        margin-left: 5%;
+    }
+
+}
+
+@media screen and (max-width: 277px) {
+    .input ul li h6 {
+        margin-left: 20%;
+    }
+}
+
+
+@media screen and (max-width: 260px) {
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    nav button {
+        font-size: 15px;
+    }
+
+    .welcome-text h2 {
+        font-size: 30px;
+    }
+
+    .bookingform {
+        width: 100%;
+        position: relative;
+        top: -470px;
+        left: 0%;
+    }
+
+    .city_text {
+        width: 150%;
+        position: relative;
+        left: -60px;
+    }
+
+    section h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .destination-info h2 {
+        font-size: 15px;
+    }
+
+}

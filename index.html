@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roaming Routes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav container">
+            <a href="#" class="logo">Roaming Routes</a>
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#citys" class="nav-link">Citys</a>
+                <a href="#places" class="nav-link">Places</a>
+                <a href="#travel" class="nav-link">Travel</a>
+                <a href="#" class="nav-link nav-book">Login</a>
+            </div>
+            <button id="open-menu-btn"><i class="fa-solid fa-water"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <section class="home container" id="home">
+        <img src="img/last.jpg">
+        <div class="welcome-text">
+            <h5>DISCOVER YOUR NEXT</h5>
+            <h2>ADVANTURE</h2>
+            <p>Roaming Routes is providing you and your family to visit all around Bangladesh. <br> Contact us and
+                enjoy your trip with us.</p>
+        </div>
+
+        <form action="" method="post" class="bookingform">
+            <div class="box-info"> <span>Place</span>
+                <input type="text" class="info" maxlength="20" name="name" placeholder="Place" required>
+            </div>
+            <div class="box-info"> <span>Date</span>
+                <input type="date" class="info" name="starting date" required>
+            </div>
+            <div class="box-info"><span>People</span>
+                <input type="number" class="info" name="people" placeholder="Number" required>
+            </div>
+            <div class="info-btn"><button>Submit</button></div>
+        </form>
+
+        <div class="cards">
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </span>
+                <h3>Tailored <br> Journeys</h3>
+                <p>Personalized travel planning with our seasoned experts ensures every trip is tailored.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-tags"></i>
+                </span>
+                <h3>Exclusive <br> Deals</h3>
+                <p>Discover hidden gems and unique experiences with special deals.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </span>
+                <h3>Travel <br> Worry-Free</h3>
+                <p>Enjoy peace of mind knowing our dedicated support team is available around.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-compass"></i>
+                </span>
+                <h3>Unique <br> Experiences</h3>
+                <p>Embark on unforgettable journeys that go beyond the typical tourist trails.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="citys" id="citys">
+        <h1>Citys to Travel</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <div class="city-info">
+                            <div class="city_img">
+                                <img src="img/dhaka.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>DHAKA</h2>
+                                <div class="info">
+                                    <p>60000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="city_img">
+                                <img src="img/sylhet.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>SYLHET</h2>
+                                <div class="info">
+                                    <p>45000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <div>
+                            <div class="city_img">
+                                <img src="img/barishal.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>BARISHAL</h2>
+                                <div class="info">
+                                    <p>50000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="city_img">
+                                <img src="img/rajshahi.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>RAJSHAHI</h2>
+                                <div class="info">
+                                    <p>45000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <div>
+                            <div class="city_img">
+                                <img src="img/khulna.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>KHULNA</h2>
+                                <div class="info">
+                                    <p>40000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="city_img">
+                                <img src="img/chittagong.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>CHITTAGONG</h2>
+                                <div class="info">
+                                    <p>55000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <div>
+                            <div class="city_img">
+                                <img src="img/mymensingh.jpeg">
+                            </div>
+                            <div class="city_text">
+                                <h2>MYMENSINGH</h2>
+                                <div class="info">
+                                    <p>40000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="city_img">
+                                <img src="img/Rangpur.jpg">
+                            </div>
+                            <div class="city_text">
+                                <h2>RANGPUR</h2>
+                                <div class="info">
+                                    <p>35000</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="more">
+                                    <p>Read More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <section class="places" id="places">
+        <h1>Best Places for travel</h1>
+        <div class="place-info">
+            <article class="place">
+                <img src="img/Bandarban.jpg">
+                <h4>BANDARBAN</h4>
+                <p>10 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/coxs bazar.jpg">
+                <h4>COX BAZAR</h4>
+                <p>10 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/Rangamati.jpg">
+                <h4>RANGAMATI</h4>
+                <p>10 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/sajek velly.jpg">
+                <h4>SAJEK VELLY</h4>
+                <p>10 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/Saint-Martin.jpg">
+                <h4>SAINT MARTIN</h4>
+                <p>10 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/Sonargaon.jpg">
+                <h4>SONARGAON</h4>
+                <p>07 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/Paharpur Buddhist Monastery.jpg">
+                <h4>PHAARPUT</h4>
+                <p>05 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/sundarban.jpg">
+                <h4>SUNDARBAN</h4>
+                <p>08 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/Ahsan Manjil.png">
+                <h4>AHSAN MANJIL</h4>
+                <p>03 pakages</p>
+            </article>
+            <article class="place">
+                <img src="img/Srimangal.jpg">
+                <h4>SRIMANGAL</h4>
+                <p>04 pakages</p>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="travel" id="travel">
+        <h1>Book hotel and vihecals</h1>
+        <div class="booking">
+            <div class="destination-info">
+                <h2>CHOOSE YOUR NEXT ADVANTURE</h2>
+                <div class="destination"><a href="https://www.google.com/maps/place/Dhaka/" target="_blank">DHAKA
+                        <i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://www.google.com/maps/place/Sylhet/" target="_blank">SYLHET
+                        <i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://www.google.com/maps/place/barishal/" target="_blank">BARISHAL
+                        <i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://www.google.com/maps/place/rajshahi/" target="_blank">RAJSHAHI
+                        <i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://www.google.com/maps/place/mymensingh/" target="_blank">MYMENSINGH
+                        <i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://www.google.com/maps/place/Rangpur/" target="_blank">RANGPUR
+                        <i class="fas fa-map-marker-alt"></i></a>
+                </div>
+                <p>To choose the hotel click the city you are visiting then choose the hotel you like</p>
+                <P>We will take care of your Air ticket, Hotel and travel</P>
+                <p class="book-info">MORE INFO</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/plane.webp">
+                        <h3>FLIGHT</h3>
+                    </div>
+                    <div class="swiper-slide"><img src="img/train.jpg">
+                        <h3>TRAIN</h3>
+                    </div>
+                    <div class="swiper-slide"><img src="img/bus.webp">
+                        <h3>BUS</h3>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="subscibe container">
+        <h2>Subscribe & <br> get special discount</h2>
+        <p>Get special discount by subscribing our web site. And enjoy your tour in Bangladesh.</p>
+        <div class="input">
+            <input type="text" placeholder="Enter your Email Address">
+            <button>Subscribe</button>
+            <ul>
+                <li>7823 <br>
+                    <h6>Years serving the travel Industry.</h6>
+                </li>
+                <li>6374 <br>
+                    <h6>Global <br> partnership.</h6>
+                </li>
+                <li>1496 <br>
+                    <h6>Industry Awards since 2022</h6>
+                </li>
+                <li>5688 <br>
+                    <h6>Subscribe</h6>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; Discover your new advanture with Roaming Routes by <a href="#">_crack_404</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
